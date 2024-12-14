@@ -3,6 +3,61 @@ import streamlit as st
 # Theming
 st.set_page_config(page_title="My Portfolio", layout="wide")
 
+
+
+
+
+
+# Injecting JavaScript to detect Dark/Light theme from system
+st.markdown("""
+    <script>
+        const theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.body.classList.add(theme);
+    </script>
+""", unsafe_allow_html=True)
+
+# CSS to handle theme
+st.markdown("""
+    <style>
+        .dark .header {
+            background: linear-gradient(135deg, #0a0a0a, #2c2c2c);
+            color: white;
+        }
+        .dark .container {
+            background-color: #222222;
+            color: white;
+        }
+        .dark .card {
+            background: #333333;
+            color: white;
+            box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+        }
+
+        .light .header {
+            background: linear-gradient(135deg, rgb(16, 12, 233), rgb(25, 78, 224));
+            color: white;
+        }
+        .light .container {
+            background-color: #fff;
+            color: #000;
+            border-radius: 25px;
+        }
+        .light .card {
+            background: #ffffff;
+            color: #000;
+            box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
 st.markdown(
     """
     <style>
