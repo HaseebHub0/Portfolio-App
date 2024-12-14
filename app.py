@@ -6,21 +6,10 @@ st.set_page_config(page_title="My Portfolio", layout="wide")
 st.markdown(
     """
     <style>
-    .css-18e3th9 {
-            position: fixed;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 250px;
-            background-color: #f1f1f1;
-            z-index: 1000;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .css-1kyxreq {
-            margin-left: 250px;
+    
     /* Global Styles */
     body {
-        background-color: #f7f9fc;
+        background-color: #FFFFFF;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
