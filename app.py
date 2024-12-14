@@ -16,10 +16,17 @@ st.markdown("""
     </script>
 """, unsafe_allow_html=True)
 
-# CSS to handle theme
-st.markdown("""
+
+
+
+
+
+
+
+st.markdown(
+    """
     <style>
-        .dark .header {
+    .dark .header {
             background: linear-gradient(135deg, #0a0a0a, #2c2c2c);
             color: white;
         }
@@ -47,21 +54,6 @@ st.markdown("""
             color: #000;
             box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
         }
-    </style>
-""", unsafe_allow_html=True)
-
-
-
-
-
-
-
-
-
-st.markdown(
-    """
-    <style>
-    
     /* Global Styles */
     body {
         background-color: #FFFFFF;
